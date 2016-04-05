@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="Style.css">
+		<title>Events</title>
+	</head>
+	
+<script> 
+function changeImage()
+{
+var img = document.getElementById("image");
+img.src="./Images/Goldfish.jpg";
+document.getElementById("Esection1").style.display= "block";
+document.getElementById("Esection2").style.display= "none";
+document.getElementById("Esection3").style.display= "none";
+document.getElementById("Esection4").style.display= "none";
+return false;
+}
+
+function changeImage2()
+{
+var img = document.getElementById("image");
+img.src="./Images/ACDC.jpg";
+document.getElementById("Esection1").style.display= "none";
+document.getElementById("Esection2").style.display= "block";
+document.getElementById("Esection3").style.display= "none";
+document.getElementById("Esection4").style.display= "none";
+return false;
+}
+
+function changeImage3()
+{
+var img = document.getElementById("image");
+img.src="./Images/Muse.jpg";
+document.getElementById("Esection1").style.display= "none";
+document.getElementById("Esection2").style.display= "none";
+document.getElementById("Esection3").style.display= "block";
+document.getElementById("Esection4").style.display= "none";
+return false;
+}
+
+function changeImage4()
+{
+var img = document.getElementById("image");
+img.src="./Images/iTunes.jpg";
+document.getElementById("Esection1").style.display= "none";
+document.getElementById("Esection2").style.display= "none";
+document.getElementById("Esection3").style.display= "none";
+document.getElementById("Esection4").style.display= "block";
+return false;
+}
+</script>
+
+	<body>
+		<div class="backing">
+			<img class="banner" src="./Images/Banner.png" alt="A Song For Who">
+			<div class="navbar">
+				<ul>
+					<li><a href="index.html" class="leftedge">Home</a></li>
+					<li><a href="Gallery.html">Gallery</a></li>
+					<li><a href="Events.html">Events</a></li>
+					<li><a href="About Us.html">About us</a></li>
+					<li><a href="Contact Us.html" class="rightedge">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="events">
+				<img id="image" src="./Images/Goldfish.jpg">
+				<div class="overlay">
+					<input type="image" class="button" onclick="changeImage()" src="./Images/Button1.png" onmouseover="src='./Images/Button2.png'" onmouseout="src='./Images/Button1.png'" height="24" width="24">
+					<input type="image" class="button" onclick="changeImage2()" src="./Images/Button1.png" onmouseover="src='./Images/Button2.png'" onmouseout="src='./Images/Button1.png'" height="24" width="24">
+					<input type="image" class="button" onclick="changeImage3()" src="./Images/Button1.png" onmouseover="src='./Images/Button2.png'" onmouseout="src='./Images/Button1.png'" height="24" width="24">
+					<input type="image" class="button" onclick="changeImage4()" src="./Images/Button1.png" onmouseover="src='./Images/Button2.png'" onmouseout="src='./Images/Button1.png'" height="24" width="24">
+				</div>
+			</div>
+			<div id="Esection1">
+				<img src="./Images/Goldfish Concert.jpg" id="GoldfishImg">
+				<p>Goldfish's wildly successful Cape Town residency Submerged Sundays returns to Shimmy Beach Club for the 7th edition of Cape Town's biggest party of the Summer!
+				<br><br>This season will feature superstar international guests including Wankelmut(Berlin), Lexer(Berlin) and Bakermat(NL) with more TBA!
+				<br>The opening party starts November 30th, with Submerged Sundays continuing until the January 25th.</p>
+				<span title="Goldfish - We Come Together">
+					<audio controls>
+						<source src="./Music/Goldfish - We Come Together.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</span>
+				<br><p>Can't wait or can't make it? You may be in luck as Goldfish Live begins their European tour November 14th hitting Munich, Edinburgh, Vienna, Zurich, Gothenburg and Naples!</p>
+				<table id="t01">
+					<tr>
+						<th>Date</th>
+						<th>Venue</th>		
+						<th>Location</th>
+					</tr>
+					<tr>
+						<td>November 14th</td>
+						<td>Bullit Club</td>		
+						<td>Munich, Germany</td>
+					</tr>
+					<tr>
+						<td>November 15th</td>
+						<td>Qube Project</td>		
+						<td>London, UK</td>
+					</tr>
+					<tr>
+						<td>November 16th</td>
+						<td>Liquid Rooms</td>		
+						<td>Edinburgh, UK</td>
+					</tr>
+					<tr>
+						<td>November 18th</td>
+						<td>Flex Club</td>		
+						<td>Vienna, Austria</td>
+					</tr>
+					<tr>
+						<td>November 20th</td>
+						<td>Club Bellevue</td>		
+						<td>Zurich, Switzerland</td>
+					</tr>
+					<tr>
+						<td>November 21st</td>
+						<td>Parklane</td>		
+						<td>Gotherburg, Sweden</td>
+					</tr>
+					<tr>
+						<td>November 22nd</td>
+						<td>Posillipo Theatre</td>		
+						<td>Naples, Italy</td>
+					</tr>
+				</table>
+			</div>
+			<div id="Esection2">
+				<img src="./Images/ACDC Group.jpg" id="ACDCImg">
+				<p>Announced in September 2013, ROCK OR BUST is the new and highly anticipated studio album from AC/DC releasing on December 2nd 2014! This is the first album of new AC/DC material since the 2008 multi platinum album Black Ice!
+				<br><br><br>The first single from ROCK OR BUST is <i>Play Ball</i> which can be instantly downloaded when you pre-order the album.<br></p>
+				<video controls width=350 height=197 class="video">
+					<source src="./Videos/AC-DC - Play Ball.ogv" type='video/ogg; codecs="theora, vorbis"'>
+					<source src="./Videos/AC-DC - Play Ball.webm" type='video/webm'>
+					<source src="./Videos/AC-DC - Play Ball.mp4" type='video/mp4'>
+					<p>Video is not visible, most likely your browser does not support HTML5 video</p>
+				</video>
+				<center>Track List</center>
+				<div id="tracks1">
+					<p>1. Rock or Bust
+					<br>2. Play Ball
+					<br>3. Rock The Blues Away
+					<br>4. Miss Adventure
+					<br>5. Dogs of War
+					<br>6. Got Some Rock & Roll Thunder
+					<br>7. Hard Times</p>
+				</div>
+				<div id="tracks2">
+					<p>8. Baptism By Fire
+					<br>9. Rock the House
+					<br>10. Sweet Candy
+					<br>11. Emission Control</p>
+				</div>
+				<p id="p01"><center>You can pre-order the album now at Amazon, iTunes or Google Play!</center></p>
+			</div>
+			<div id="Esection3">
+				<p><center>Rockvaria is a new festival planned to be held for three days in Munich, Germany for 2015!</center>
+				<br>
+				Following in the tradition of Wacken Open Air and Rock am Ring, Rockvaria is another festival that will bring together a lineup of well-known international rock bands bands with rock music fans from across Germany, neighboring European countries, and many other locations! It's planned to be held at the OlympiaPark from May 29th to May 31st.</p>
+				<img src="./Images/Tickets.jpg" id="TicketsImg">
+				<span title="Metallica - Nothing Else Matters">
+					<audio controls>
+						<source src="./Music/Metallica - Nothing Else Matters.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</span>
+				<p>The 2015 festival will be headlined by a series of well-known American rock and metal bands including Incubus, Faith No More, and Five Finger Death Punch. Additionally, Metallica and KISS, two beloved classic metal bands with huge international followings, will be performing over the three day period! The headlining list also features several well-known European bands including England’s hugely popular Muse!</p>
+				<span title="Muse - Starlight">
+					<audio controls>
+						<source src="./Music/Muse - Starlight.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</span>
+				<p><center>Tickets are on sale now via Ticketmaster at an ‘early bird’ price of 169 Euros, which includes admission for all three days of the festival!</center></p>
+			</div>
+			<div id="Esection4">
+				<img src="./Images/iTunes Festival.jpg" id="iTunesImg">
+				<p>The iTunes Festival is a full-volume celebration of live music with performances from some of the biggest names in music! If you were lucky enough, you could've won tickets to see these performances live in person, otherwise the event was broadcast live on Apple TV.</p>
+				<span title="The Script - Superheroes">
+					<audio controls>
+						<source src="./Music/The Script - Superheroes.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</span>
+				<br>
+				<p>The festival returned to the Roundhouse this September, presenting 30 nights of incredible live shows from names such as deadmau5, The Script and many more!</p>
+				<iframe width="350" height="205" src="http://www.youtube.com/embed/VKQK3_9EguI" frameborder="0" allowfullscreen class="video"></iframe>
+				<p id="p02">Not only was the festival held in London, but for the first time a five day festival premiered at the Moody Theater, Austin, Texas from March 11th to March 15th, boasting big names such as Coldplay and Imagine Dragons!</p><br>
+				<span title="Imagine Dragons - Warriors">
+					<audio controls>
+						<source src="./Music/Imagine Dragons - Warriors.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</span>
+			</div><br>
+		</div>
+	</body>
+</html>
