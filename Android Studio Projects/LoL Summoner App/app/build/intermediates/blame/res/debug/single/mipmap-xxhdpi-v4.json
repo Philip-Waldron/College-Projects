@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Septimus\\AndroidStudioProjects\\LoL Summoner App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\lsalogo.png",
+        "source": "C:\\Users\\Septimus\\AndroidStudioProjects\\LoL Summoner App\\app\\src\\main\\res\\mipmap-xxhdpi\\lsalogo.png"
+    },
+    {
+        "merged": "C:\\Users\\Septimus\\AndroidStudioProjects\\LoL Summoner App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Septimus\\AndroidStudioProjects\\LoL Summoner App\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Septimus\\AndroidStudioProjects\\LoL Summoner App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\srbackground.png",
+        "source": "C:\\Users\\Septimus\\AndroidStudioProjects\\LoL Summoner App\\app\\src\\main\\res\\mipmap-xxhdpi\\srbackground.png"
+    }
+]

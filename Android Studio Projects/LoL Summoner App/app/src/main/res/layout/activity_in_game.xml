@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lsa.lol.summonerapp.InGameActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:indeterminate="true"
+        android:layout_centerHorizontal="true"
+        android:gravity = "bottom"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="60dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/responseView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity = "bottom"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:requiresFadingEdge="vertical"
+        android:fadingEdgeLength="75dp">
+
+        <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TableRow>
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/team1"
+                            android:id="@+id/blueTeam"
+                            android:textStyle="bold"
+                            android:textColor="#1f8ecd" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rank_title"
+                            android:id="@+id/blueTeamRank" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ban"
+                            android:id="@+id/blueTeamBan" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#1f8ecd" />
+
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner1" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank1" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/ban"
+                            android:id="@+id/ban1" />
+
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner2" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank2" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/ban"
+                            android:id="@+id/ban3" />
+
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner3" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank3" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/ban"
+                            android:id="@+id/ban5" />
+
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner4" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank4" />
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner5" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank5" />
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner6" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank6" />
+                    </TableRow>
+                    <TableRow>
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/team2"
+                            android:id="@+id/redTeam"
+                            android:textStyle="bold"
+                            android:textColor="#ee5a52" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rank_title"
+                            android:id="@+id/redTeamRank" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ban"
+                            android:id="@+id/redTeamBan" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#ee5a52" />
+
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion7" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner7" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank7" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/ban"
+                            android:id="@+id/ban2" />
+
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion8" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner8" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank8" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/ban"
+                            android:id="@+id/ban4" />
+
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner9" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank9" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/ban"
+                            android:id="@+id/ban6" />
+
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion10" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner10" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank10" />
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion11" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner11" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank11" />
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/champion"
+                            android:id="@+id/champion12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summoner12" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="20px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rank12" />
+                    </TableRow>
+                </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</RelativeLayout>

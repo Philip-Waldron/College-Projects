@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html data-build-number="201504120723"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Choice of Monsters
+</title>
+<meta charset="utf-8">
+<style>
+body
+{
+	font: 10pt Cousine, monospace;
+	margin: 2em;
+}
+
+h1
+{
+	font-size: 14pt;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+tw-passagedata
+{
+	display: block !important;
+	line-height: 200%;
+	margin-bottom: 2em;
+	white-space: pre-wrap;
+}
+
+tw-passagedata + tw-passagedata
+{
+	border-top: 1pt dashed black;
+	padding-top: 2em;
+}
+
+tw-passagedata:before
+{
+	content: attr(name);
+	display: block;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Choice of Monsters
+</h1>
+<tw-storydata name="Choice of Monsters" startnode="1" creator="Twine" creator-version="2.0.4" ifid="96F194D7-CCEB-407D-BD09-844072A0794D" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar tw-icon.redo
+{
+	display: none;
+}
+tw-sidebar tw-icon.undo
+{
+	display: none;
+}
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Opening" tags="" position="941,9">{(set: $FerociousKind to 50)(set: $SeriousPlayful to 50)(set: $IgnorantIntelligent to 30)(set: $CowardlyFearless to 50)}
+    This story begins in a world where humans and monsters populate much of its surface, living in disharmony. The humans and monsters are always under threat from one-another, with savagery and war between the two species commonplace. Some monsters can be found living in hiding, to protect themselves from the wrath of humans. The same can be said of humans, who live in small fortified villages and wish to have as little contact as possible with the monsters in the world. Other monsters live in tribes out in the open, just like many humans do in their grand cities of stone and marble. These are the ones who fight the most, eons of old hatred spurring them to attack each other again and again. A never ending cycle.
+    
+    Before we begin your story, what is your name?
+    
+    [[My name is...|Player Name]]</tw-passagedata><tw-passagedata pid="2" name="Player Name" tags="" position="945,148">(set: $PlayerName to (prompt:"What's your name?"))
+(if: $PlayerName is "")[(goto:"Insist Player Name")]
+(else:)[(goto:"Name Entered")]</tw-passagedata><tw-passagedata pid="3" name="Insist Player Name" tags="" position="944,277">(set: $PlayerName to (prompt:"I must insist that you share your name!"))
+(if: $PlayerName is "")[(goto:"Insist Player Name")]
+(else)[(goto:"Name Entered")]</tw-passagedata><tw-passagedata pid="4" name="Name Entered" tags="" position="944,409">Welcome to our story $PlayerName.
+
+[[Lets begin...|Beginning]]</tw-passagedata><tw-passagedata pid="5" name="Beginning" tags="" position="945,557">	You, $PlayerName, are a resident of a small town nestled between a large mountain range and sprawling forest. It's a reasonably fortified town, but its residents don't go out of their way to hunt monsters, only attacking those that approach the town. 
+    
+    You are a bit of a dreamer, and one day you hope to one slay a monster of your very own, just like many before you protecting their home. On one particular autumn morning, it's your turn to venture out with a small hunting party to hunt boar and deer. You excitedly pack your equipment and head out with the townspeople, hoping to stumble across a monster today and prove yourself by defeating it.
+    
+    [[Continue|Forest Path]]</tw-passagedata><tw-passagedata pid="6" name="Forest Path" tags="" position="944,696">	You and your party enter the nearby, overgrown forest. You wander around with the hunting party surveying your surroundings for boar, deer and more importantly, any monsters. After hunting for about an hour without much luck, you find your attention drawn to noise of what seems to be a child crying.
+    
+    [[Stop and listen]]
+    [[Head towards the noise|Investigate!]]
+    [[Ignore it]]</tw-passagedata><tw-passagedata pid="7" name="Stop and listen" tags="" position="770,847">	You pause, oblivious to growing gap between you and your party. You listen for a few moments, eventually coming to the conclusion that it can't be a child making the noise, not a human child anyway. With curiosity taking point, you decide to investigate the noise.
+    
+    [[Investigate!]]</tw-passagedata><tw-passagedata pid="8" name="Ignore it" tags="" position="1096,846">	You decide to ignore the noise and push on with your party. Turning back to follow your party, you begin to panic when you can't immediately see anyone. You were left behind!  
+     
+    You hurriedly move in the direction the party went, or at least where you thought they went. Flustered and panicked you lose track of where you are, and fall off the hunting route into the denser Forrest.
+    
+    [[Keep Going|Clearing]]</tw-passagedata><tw-passagedata pid="9" name="Clearing" tags="" position="946,1127">	You eventually stumble into a small clearing with a faint light glimmering through the tree line. You glance about seeing nothing of significance. As you start for other end, you realise the crying has faded to a small whimper now. You suddenly realise that it must have been a monster you heard, and you feel your body tense. It is only then you notice a lump of dark fur seated under a nearby tree. Drawing your hunting knife, you begin to creep towards the figure. 
+     
+    As you approach close to the ball, you pause to examine it. It is about the size of a small human baby, covered in a dark brown fur, and it seems to have small fang like teeth and claws. You are surprised to notice that it seems to have truly been crying.
+    
+    [[Continue|The Monster]]</tw-passagedata><tw-passagedata pid="10" name="The Monster" tags="" position="946,1302">	You find yourself hesitating, thinking to yourself *this one is just a baby, isn't it?* It wasn't what you expected the first monster you ever saw to be like; you always imagined it to be a raging beast to come running at you, with death in its eyes. Not a small, sad, defenseless... creature.  
+     
+    You quickly realise that you can't kill it. As you take a step back a twig snaps under your foot, and the whimpering stops. The monster now becomes aware of your presence, and it seems quite afraid of you. Judging from its emaciated frame you figure that it must be starved. You wonder what you should do.
+    
+    [[Call for your party]]
+    [[Console the creature]]
+    [[Throw it some dried meat from your pouch]]</tw-passagedata><tw-passagedata pid="11" name="Investigate!" tags="" position="945,848">	As you step through the branches wavering off the beaten path, unaware of the fading voices of your party, you slow your stride as the foliage gets thicker. Pulling vines and branches apart you take a few cuts and stings from the thorns and plant life, but motivated and driven by your lust for adventure and curiosity, you don't stop.
+    
+    [[Continue|Clearing]]</tw-passagedata><tw-passagedata pid="12" name="Call for your party" tags="" position="1331,1765">{(set: $IgnortantIntelligent to $IgnorantIntelligent +10)(set: $CowardlyFearless to $CowardlyFearless - 10)}
+    You call out for your party so you can show them the little monster. It cowers back in fear at the sound of you shouting. Your party responds to your call and you turn to face where you heard them.
+"I'm over here, come see this!" you call out, and turn back to face the monster and are taken aback when you find it nowhere in sight. It knew it should hide when other people where around.
+	
+	Your group enters the clearing, and you wave to them. "What's wrong?" one of them asks.
+"There was a baby monster just here, but it ran away..." you reply.
+"What? You couldn't manage to kill a baby monster?" They all laugh. "Come on, we should head back with what we've gotten for now, Mr. No Can Kill." They laugh again and head off. You trail behind them, and cast one more look around the clearing before walking away.
+
+	[[Continue|Home Without Monster]]</tw-passagedata><tw-passagedata pid="13" name="Console the creature" tags="" position="601,1503">{(set: $FerociousKind to $FerociousKind + 10)}
+    Speaking softly, you slowly kneel down and speak words of encouragement to the creature.
+"Hey there little guy. Uhh... don't be afraid, I'm not going to hurt you."
+The little creature seems to calm down slightly from the sound of your soothing voice. Moving slowly, so as not to alarm the creature, you set down your bag.
+"Are you lost little guy? Is that why you are here all alone?"
+In response to your voice, the creature moves a little towards you. You feel yourself smile at how timid the little creature is. The creature keeps looking at you, and you realise that it is waiting for you to talk some more.
+"Uhh... I can't say my monster conversational skills are very good I'm afraid," you say somewhat awkwardly once you become aware that the creature expects you to speak. Nonetheless, the creature covers the distance between you now, and it pauses in front of you.
+
+[[Continue|Console creature part 2]]</tw-passagedata><tw-passagedata pid="14" name="Throw it some dried meat from your pouch" tags="" position="948,1502">{(set: $FerociousKind to $FerociousKind + 10)}
+    Remembering the pouch slung around your waist, you decide to feed the little creature some of the meat you brought along for hunting. You reach into your pouch to pull out one of the pieces of dried meat, ripping a few small chunks off and tossing them in front of the creature. Tilting its head, it slowly prowls towards the meat, almost as if stalking its prey. It lowers its head cautiously, sniffing the meat for a few moments before pausing.
+
+    {(set: $Eat to (either:"Monster Eats","Monster Doesn't Eat"))
+	(if: $Eat is "Monster Eats")[[[Continue|Monster Eats]]]
+    (else:)[[[Continue|Monster Doesn't Eat]]]}
+</tw-passagedata><tw-passagedata pid="15" name="Monster Doesn't Eat" tags="" position="1088,1683">{(set: $CowardlyFearless to $CowardlyFearless - 12)}
+    The little creature scrunches its face and whimpers lightly, taking a few steps back from the meat, as if afraid of it. Despite your best efforts to persuade the creature to at least try the meat, it stubbornly refuses every time.
+    
+    With a sigh you drop to your knees, throwing the pouch from your shoulder to the ground. Pulling it open, you reluctantly begin to gather the scattered meat while the creature sits and curiously watches. As you pick up the last piece, you're startled by the noise of people calling out your name. You look up to see the faint shadows of your hunting party heading in your direction. Instinctively, you turn back to the creature, with the creature staring straight back at you.
+    
+    [[Offer the creature to hide in your pouch]]
+    [[Shoo the creature away]]</tw-passagedata><tw-passagedata pid="16" name="Monster Eats" tags="" position="818,1676">{(set: $CowardlyFearless to $CowardlyFearless + 12)}
+    The creature looks up at you longingly. You give it nod, and without a moment to spare it dives into the chunks of meat, savaging it in seconds. You feel strangely content with your actions, knowing you helped the little guy and that he may just make it through the day. The creature interrupts any further thought With a loud satisfied belch; looking up at you with wide eyes, looking for more.
+    
+    Before you get a chance to hand it more, you're startled by the noise of people calling out your name. You look up to see the faint shadows of your hunting party heading in your direction. Instinctively, you turn back to the creature, with the creature still staring straight back at you.
+    
+    [[Offer the creature to hide in your pouch]]
+    [[Shoo the creature away]]</tw-passagedata><tw-passagedata pid="17" name="Console creature part 2" tags="" position="600,1678">{(set: $SeriousPlayful to $SeriousPlayful + 10)}
+    You feel very conflicted at the sight if the little creature in front of you. People always said monsters were dangerous, but looking at the one in front of you, you can't see how that is the case. Feeling like it expects something, you extend your hand slowly towards the creature. It doesn't panic and try to run or bite you, so you pat its head gently.
+
+	It seems to enjoy the contact, and it pushes its head into your hand. Then it starts to pat your hand with both of its small hands. You find yourself laughing slightly at this sight. You never would have thought this was possible, but here you were, petting a monster.
+
+	The creature stops and moves over towards your bag and begins sniffing curiously. "Are you hungry?" you find yourself asking the creature. It pulls at the bag, so you take that as an affirmation. You open the bag and fall back in surprise when the creature dives into your bag.
+    
+[[Continue|Console creature part 3]]</tw-passagedata><tw-passagedata pid="18" name="Console creature part 3" tags="" position="600,1852">	"Whoa little guy, what do you think you're doing?" you peep into your bag, and are astounded to see it curled up in your bag with a piece of meat in its mouth. It looks like it's dozing off. 
+     
+    "$PlayerName! Where are you?" one of the people in your group calls out. You freeze. You had forgotten about them. If they see this creature they will definitely kill it, but you feel a strong urge to protect it. You look in your bag once more and see it sleeping. Hearing footsteps drawing near, you quickly decide to hope for the best, closing your bag, and gently slinging it over your shoulder. "Coming!" you call back, leaving the clearing with a little baby monster sleeping in your bag.
+    
+    [[Continue|Home With Monster]]</tw-passagedata><tw-passagedata pid="19" name="Offer the creature to hide in your pouch" tags="" position="816,1853">{(set: $CowardlyFearless to $CowardlyFearless + 5)}
+    As the voices get louder, you see the creature's ears twitching in rhythm with your friend's calls, beginning to look distressed. In a fleeting moment, you don't hesitate to open up your pouch to the creature offering it sanctuary from your party. Confused and panicked, it hops into the sack not knowing what else to do. You glance at the creature curled up, shaking from fear. "Don't worry little guy, I've got you." You taut the bag closed and pull it over your shoulder, grunting from the unexpected weight of the creature. 
+    "$PlayerName! Where are you?" one of the people in your group calls out. 
+    "I'm here! Hold on I'm coming to you!" you call back as you begin to walk towards the voices, carrying a little baby monster with you.
+    
+    [[Continue|Home With Monster]]</tw-passagedata><tw-passagedata pid="20" name="Shoo the creature away" tags="" position="1087,1853">{(set: $CowardlyFearless to $CowardlyFearless - 8)}
+    As the voices get louder, you see the creature's ears twitching in rhythm with your friend's calls, beginning to look distressed. You don't want them to see you with the creature, or to harm him. "Shoo, run or they'll see you!" You gesture in the opposite direction prompting the creature to go. Its ears immediately drop along with its expression. "Go!" You feel terrible knowing how scared the little guy must be, but assure yourself that this is what's best for it. The creature whimpers, turning its back, and sprints in the opposite direction.
+    
+    [[Continue|Home Without Monster]]</tw-passagedata><tw-passagedata pid="21" name="Home Without Monster" tags="" position="1404,2104">	After some time passes you finally make it back from the hunt. *What a day* you think to yourself, as you unlock the door to your home. As you stumble in you throw your pouch and equipment aside and shut the door. You turn around and fall against the door, leaning as you slowly slide down towards the floor. *I can't get the image of that creature out of my mind, the encounter just felt too surreal* you think to yourself, rubbing your hands across your face.
+    
+    You continue to sit there in silence for a few moments, thinking about what you should do next. *Should I go back? What if it's still there?*
+    
+    [[Continue|What to do Next]]</tw-passagedata><tw-passagedata pid="22" name="Home With Monster" tags="" position="708,2094">	After some time passes you finally make it back from the hunt. You hurriedly enter your house and shut the door behind you. *You made it home. You actually made it home without anything happening.* You breathe a sigh of relief, and gently set your bag down on the floor and open it up. The creature seems to be waking up now that you have arrived home. It clambers out of the bag, and looks curiously around the room. You have no idea why you have brought a baby monster home, and you feel like you are going to regret it, but for now you are feeling surprisingly happy about having it around. 
+"Well this is my home. What do you think?" you ask the creature as it wanders around the room. It makes a small noise of what you interpret to be approval and you smile.
+
+	Before you start any further, you realise you are not sure what gender the creature is. You kneel down beside it, and you make show pf petting it, which it seems to thoroughly enjoy. You decide after a moment, that it is in fact a boy.
+    "So you are a little fella huh? I guess you could go with a name instead of just, 'the monster' right?" you say to him as you scratch behind his ear.
+
+	[[I think I'll call you...|Name creature]]</tw-passagedata><tw-passagedata pid="23" name="Start of Tour" tags="" position="706,2248">	You can sense $CreatureName's eagerness to explore the new environment. 
+"How about I show you around then?" You say offhandedly to him. "It might be a small house, but I have plenty of things in here!"
+
+	[[Show him kitchen area]]
+	[[Show him your storage room]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="24" name="Show him kitchen area" tags="" position="506,2308">{(set: $IgnorantIntelligent to $IgnorantIntelligent + 10)(set: $CowardlyFearless to $CowardlyFearless + 5)(set: $FerociousKind to $FerociousKind + 5)}
+    "Come on, I'll show you the kitchen! It's where I cook all my food and make it taste good." You walk into the kitchen, and $CreatureName bounds in after you. You watch in fascination as he wanders around the kitchen poking and sniffing everything he comes across. He scrambles up your counter and sits there looking at your jars of herbs and spices. He picks one up and you watch him poke and pull the jar until he works out how to open it up. You blink in surprise. You didn't think he would be able to work out how to open the jar.
+
+	*Looks like monsters are more intelligent than we give them credit for*, you think to yourself. As you finish your last thought however, $CreatureName sticks his nose in the jar and inhales some of the spice. He sneezes very loudly and then gives a small growl in anger at the spice. You laugh as he attempts to rub the rest of the powder from his nose. You are not sure if it was brave of him to sniff all that powder in one go, or stupid, but since he worked out how to open the jar, you settle with brave. You figure you should fill a bucket with water to clean him up, now that he is covered in spice.
+    
+	[[Clean him]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="25" name="Show him your storage room" tags="" position="760,2399">{(set: $IgnorantIntelligent to $IgnorantIntelligent + 10)}	
+    You walk the $CreatureName towards your storage room. You keep everything you have more or less in one room, so you have little lying around the house. When you enter the room $CreatureName starts jumping around with excitement at the treasure trove of new wonders before him.
+
+    Without really thinking about what you are doing, you start telling him about the different things in the room. You wonder why you are doing this, but at the same time, you feel that he understands what you are saying.
+
+    $CreatureName jumps up onto a large chest and then he hops over to another one. He bounces back and forth between the two. You figure you should show him the contents of one of the chests. You think the left one has weapons, but you can't seem to remember what is in the right one.
+    
+	[[Open the weapons chest]]
+	[[Open the mystery chest]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="26" name="Clean him" tags="" position="300,2508">	You leave the kitchen, and see the $CreatureName hop off the counter to follow you. You walk into the back room where you have a tap leading into your house. You fill a bucket with water and get a cloth to clean him. When you turn around, you see $CreatureName quivering with excitement. You figure he must like water, but you wonder if he will clean himself off, drink it all, or make a bigger mess, if you leave him with the bucket.
+
+	[[Clean him yourself with a cloth]]
+	[[Leave the bucket with him]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="27" name="Clean him yourself with a cloth" tags="" position="95,2605">{(set: $SeriousnessPlayful to $SeriousPlayful -10)(set: FerociousKind to FerociousKind +10)}
+    You wet a cloth and begin to wipe off $CreatureName's face. He stops quivering like he had been, and you wonder if he had been wanting to play with the water. That aside, however, he does seem to enjoy having you clean his face.
+
+    Afterwards $CreatureName seems quite content with himself, and then you hear a noise coming from him. "Whats wrong little guy?" you ask him, and you hear the noise again. You realise his stomach is growling. You laugh when yours does too.
+"Looks like we are both hungry! Come on, let's go make food."
+
+	[[Continue|Go make food]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="28" name="Leave the bucket with him" tags="" position="296,2645">{(set: $SeriousPlayful to $SeriousPlayful + 10)}
+	You slide the bucket of water towards him, and watch to see what he will do. You yelp in surprise, however, when he dashes at the bucket and splashes you with water.
+"Hey! What are you-," you stop yourself from yelling at him, when you realise he seems to be laughing. You stare open mouthed at him. He only wanted to play with you! You laugh and splash the creature back in turn. This goes on for a few minutes, until the bucket is empty, and you are both soaking wet.
+"Well, at least you are clean now! But I am very wet, so I am going to my room to get changed."
+    
+    [[Continue|Get dry clothes]]
+    
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="29" name="What to do Next" tags="" position="1405,2255">	Your thoughts eat away at you for the next hour or so until you finally decide that you can't just leave it there, your calling for adventure just won’t allow you to pass up this opportunity! You have to find out more about the little guy, you want to understand more about what the monsters really are like. With that, you agree with yourself to set out before sundown and catch this monster.
+    
+    [[Prepare!]]</tw-passagedata><tw-passagedata pid="30" name="Prepare!" tags="" position="1406,2403">	Over the next half hour you excitedly throw together a bag of equipment, notably a sword and some of the leftover dried meat from the hunt. Looking aside through the window, you take note of the briskly falling sun. You're worried about getting caught in the forest in darkness, as escape would become virtually impossible, but decide that you can’t back out now.
+    
+    [[For science!|Return to Forest]]</tw-passagedata><tw-passagedata pid="31" name="Return to Forest" tags="" position="1406,2555">	After some time and effort, you eventually make it back to the clearing where you first spotted the little creature. Light no longer glimmers through the tree line as the sun has already dropped too low, creating a dull fiery hue to the surrounding area. You begin scouring the stumps and edges of the clearing in hopes that the little guy stuck around.
+    
+    [[Make some noise with your sword]]
+    [[Use some dried meet to attract the creature]]</tw-passagedata><tw-passagedata pid="32" name="Use some dried meet to attract the creature" tags="" position="1406,2701">	You decide that it's pointless to keep aimlessly wandering around, hoping that you'll happen across the creature by chance. You head back towards your bag and undo the knot around your bag to pull it open. In it you see the sword you packed as well as the last chunk of meat you had.
+    
+    You reach in to grab the dried chunk of meat and pull it out, tearing it into a few smaller pieces and scattering it across the ground. You grab your bag and move out of sight, around the edge of the tree line. There’s nothing else to do now but wait.
+    
+    [[Wait]]</tw-passagedata><tw-passagedata pid="33" name="Go make food" tags="" position="95,2789">{(set: $IgnorantIntelligent to $IgnorantIntelligent + 10)}
+	You walk into the kitchen with $CreatureName following behind you. "Alright well, I don't actually have any fresh meat at the moment I'm afraid, but I have dried meat so I guess you would like some of that!"
+
+    You get some strips of dried meat and leave them down for him, and he eagerly tears into each strip. "Whoa, so you were pretty hungry I guess. Well I still have to feed myself." You get some bread that was freshly made yesterday, and some cheese and you leave two strips of meat on your plate. Before you start eating, you realise that $CreatureName is looking at your bread and cheese. *I wonder if he has ever had bread or cheese before. Will it harm him?*
+
+	[[Give some cheese and bread]]
+	[["Sorry buddy, but I don't know if this stuff is harmful to you."]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="34" name="Get dry clothes" tags="" position="588,2649">	You head to your wardrobe and get a dry set of clothing, and a small towel to dry off $CreatureName. As you change clothes, you become paranoid about $CreatureName watching you, so you change quickly. He now has a small pool of water building around him on the floor. You wonder what he might do with the towel if you just gave it to him, but you don’t want him to get sick either.
+    
+	[[Dry him yourself]]
+	[[Illustrate drying yourself, and give him the towel]]
+	[[Give him the towel without doing anything]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="35" name="Give some cheese and bread" tags="" position="95,3019">{(set $CowardlyFearless to $CowardlyFearless + 10)}
+You set down the cheese and bread and the monster seems eager to try. You watch as it eats some of the bread, then the cheese. You are surprised to see it go for more! Looks like it likes it.
+
+	After you finish eating you stretch and yawn. It got late very quickly, and you feel like today was a tiring day. You notice the creature curled up on the floor, dozing off. "Hey buddy, want to sleep somewhere a little more comfortable?" Its ears perk up to the sound of your voice, and you get up to walk to your room. You look back and see it dozing on the floor again. You decide to pick it up and carry it to your room.
+
+	[[Continue|Getting ready for the first night]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="36" name="&quot;Sorry buddy, but I don't know if this stuff is harmful to you.&quot;" tags="" position="251,2790">{(set: $FerociousKind to $FerociousKind - 10)} {(set: $IgnorantIntelligent to $IgnorantIntelligent + 10)}
+	"Sorry buddy, but I don't know if this stuff is harmful to you." you say to him, apologetically, and begin eating. He gives a small growl of annoyance at you, and then he dashes towards the cupboard where you got the bread and cheese from. He proceeds to open the press and help himself to the bread and cheese instead. *He paid attention to where I got the food!* you think to yourself, amazed at how clever this little creature is. He seems to like the cheese and bread. After denying him some of your food the first time, you would feel bad if you scolded him, after all, he only went to the cupboard because you wouldn't share.
+    
+    When you have eaten, $CreatureNam begins to doze on the floor. You feel tired too, as it has been a long day. You walk over to the dozing creature and bend down to pick him up. "Let’s go sleep somewhere more comfortable so, eh?" You scoop up $CreatureName into your arms, and head to your bedroom.
+        
+	[[Continue|Getting ready for the first night]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="37" name="Getting ready for the first night" tags="" position="596,3347">	You look around your room while $CreatureName is sleeping in your arms. You try to find something to use as a comfortable bed for him, but eventually decide to let him sleep on yours. He doesn't take up much space after all, and you have a large bed. You gently set him down to one side of your bed. You climb in soon after and quickly fall asleep.
+
+	[[Continue|The first morning]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="38" name="The first morning" tags="" position="485,3504">	You awaken slowly in the morning and stretch. You lay there for a moment and then sit up when you recall the events of the previous day. You brought a baby monster home. You have no idea what you were thinking, and now you realise the problems with having it here in your home. If people found out they would kill him, and who knows what they would do to you.
+
+    You push these melancholic thoughts from your head for the moment, as you are eager to spend more time with the little creature. You look around the room and see no sign of $CreatureName, and you begin to worry. You get out of bed and hurry to check around the house.
+    
+	[[Continue|The first morning part 2]]
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="39" name="Dry him yourself" tags="" position="488,3001">{(set: $FerociousKind to $FerociousKind + 10)}
+	You sit down beside $creatureName and wrap him in the towel. He fidgets and struggles but once you start drying him, the struggling ceases, and is replaced with a squeal of contentment. By the time you are done, he has fallen asleep in your arms. You realise that you too are tired, and should get some sleep, so you get ready to make the $CreatureName a bed.
+    
+	[[Continue|Getting ready for the first night]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="40" name="Illustrate drying yourself, and give him the towel" tags="" position="617,2991">{(set: $IgnorantIntelliigent to $IgnorantIntelligent +10)(set: $FerociousKind to $FerociousKind -10)}
+	$CreatureName probably won't appreciate being left wet for any longer than he needs to be, but you make an effort to pretend to dry yourself with the towel. $CreatureName looks at the towel for a moment once you hand it to him, then he reaches out and takes it from you. You are delighted to see him drying himself like you did! He stumbles a bit while he is drying himself, but he manages to do it on his own.
+
+    Once he is done, he wanders over to you, and curls up next to you. Watching him makes you feel the exhaustion creep up on you from you day of activities. You pick up $CreatureName and get ready to head to bed.
+
+	[[Continue|Getting ready for the first night]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="41" name="Give him the towel without doing anything" tags="" position="410,2796">{(set: $FerociousKind to $FerociousKind - 10)(set: $SeriousPlayful to $SeriousPlayful + 10)}
+	You hand him the towel and he sniffs it curiously. He takes the towel and throws it over his head. You chuckle and watch as he stumbles about aimlessly. Once he takes the towel off you decide to dry him before he gets too cold.
+    
+	[[Continue|Dry him yourself]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="42" name="The first morning part 2" tags="" position="485,3674">	You find $CreatureName in the kitchen, along with a mess with bits of food lying everywhere. You can't believe your eyes though when you lay them on $CreatureName. He has at least doubled in size. You are speechless. $CreatureName Notices you, and gives a yowl of happiness and runs at you and jumps at your chest. You catch him, and stagger at his sudden increase in weight.
+
+	"What on earth happened to you?!" You exclaim. You hadn't expected this. How did he grow so fast? This only made things more complicated. $CreatureName seems completely oblivious to the strangeness at his overnight growth spurt, and instead proceeds to lick your face.
+    
+    "Whoa, ok stop boy, seriously!" You attempt to set him down, but he has his arms and legs wrapped around you. You end up staggering backwards, and falling onto your back.
+    
+    [[Scold Creature]]
+    [[Laugh and play along with Creature]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="43" name="Open the weapons chest" tags="" position="776,2551">{(set: $CowardlyFearless to $CowardlyFearless + 10)}
+{(set: $FerociousKind to $FerociousKind - 10)}
+	Kneeling down beside the chest, you pull open its clasp, and life up the lid. $CreatureName hisses suddenly at the weapons, and you feel him directing some of that hostility towards you. You honestly don't know why you thought this was a good idea, and regret the decision to show it the weapons chest. You quickly close the lid and look around the room for something that can gain a positive reaction from him.
+
+    You see two things. You see an old teddy bear that you had as a child. You are a bit of a hoarder, so it's no surprise that you still have such a thing stored away. Next to the teddy you spot a small little gemstone that sparkles whenever caught in certain light. You remember finding it a few years ago and hanging on to it.
+    
+	[[Give him the teddy bear]]
+	[[Give him the sparkling gemstone]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="44" name="Open the mystery chest" tags="" position="944,2552">{(set: $IgnorantIntelligent to $IgnorantIntelligent - 10)}
+    You kneel beside the mystery chest and pull open the clasp and lift the lid. You feel that you are just as curious as $CreatureName as to what the contents of this chest are. It's mostly junk, to your dismay, but $CreatureName seems pretty interested all the same.
+    
+    He jumps into the chest and pulls out a flute. You had forgotten that you'd had it. "Wow, I really need to clear out this room," you say, half to yourself, and $CreatureName tilts his head to the side in response to you.
+    
+    "Let me show you what the flute does, ok?" You say and take the flight from $CreatureName. You gently blow into the flute and a soft clear note emits from it. $CreatureName's ears swivel to the flute's music, and he bounds up to you to have a look. You hand him the flute and hope to hear him make it work. He tries, but to no avail, and you feel that the flute has just confused him.
+    
+    [[Continue| Play a song for him]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="45" name="Give him the teddy bear" tags="" position="777,2707">{(set: $FerociousKind to $FerociousKind + 10)}
+	You grab the teddy from the shelf and place it in front of the creature. It spends a large length of time sniffing the teddy, before climbing on top of it and curling up to doze off to sleep. You smile at how easily its mood changes.
+
+    Watching it sleep is making you drowsy however, and you figure it's time to get some sleep. You have had an exciting day. You bend down and pick up the now sleeping creature. The teddy drops back to the floor but you don’t bother to pick it up. Instead, you just head to your room with the little creature.
+    
+	[[Continue|Getting ready for the first night]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="46" name="Give him the sparkling gemstone" tags="" position="914,2701">{(set: $CowardlyFearless to $CowardlyFearless + 10)}
+    You pick up the gemstone and admire its sparkling surface, you stand near a window to catch some of the days fading light, direct a beam of light towards the floor using the gemstone.
+
+    $CreatureName tenses at the sight of the light on the floor, then he pounces on. You stifle a laugh as you look at him lift his hands to find nothing there, you tease him with the light in front of him, and he continues to chase the light. After a while though, you feel that he isn't actually enjoying the light and is chasing it out of a more predatory instinct. Guess this wasn't his idea of play time.
+
+    $CreatureName has tired himself out after his little chase, and looking outside you can see it getting dark now, and you are tired yourself after your exciting day. You set the stone down, and pick up $CreatureName, who is already beginning to fall asleep, and head to your room.
+    
+    [[Continue|Getting ready for the first night]]
+    
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="47" name="Name creature" tags="" position="868,2095">(set: $CreatureName to (prompt:"What is his name?"))
+(if: $CreatureName is "")[(goto:"Insist creature name")]
+(else:)[(goto:"Creature named")]</tw-passagedata><tw-passagedata pid="48" name="Creature named" tags="" position="1007,2178">	"What do you think of the name $CreatureName?" you ask him. He seems to be quite happy with his new name. You feel now you can give him a tour of the house!
+    
+[[Start of Tour]]
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="49" name="Insist creature name" tags="" position="1005,2026">(set: $CreatureName to (prompt:"You really need to name this little guy!"))
+(if: $CreatureName is "")[(goto:"Insist creature name")]
+(else)[(goto:"Creature named")]</tw-passagedata><tw-passagedata pid="50" name="Make some noise with your sword" tags="" position="1245,2702">	You decide that walking around in circles isn't getting you anywhere. Looking at your bag, you remember the sword that you brought along with you. "Maybe I can get the creatures attention with my sword, make some noise" You mutter to yourself, while starting towards the bag. You undo the knot on your bag and pull it open. Sits there is your vibrant silver sword, not yet christened with through real combat.
+    
+    [[Grab the sword]]
+   </tw-passagedata><tw-passagedata pid="51" name="Grab the sword" tags="" position="1245,2852">	Your grab the sword with one hand and unsheathe it from the bag, swirling it around you as if trying to show off. You lower your sword and begin to tap it off a nearby stump, creating sharp, stinging clangs. After just a few rhythmic tap, you hear cracking of twigs and the rustling of bushes and branches nearby. You space your feet and ready your weapon.
+    
+    [[I'm ready]]</tw-passagedata><tw-passagedata pid="52" name="I'm ready" tags="" position="1245,3002">{(set: $FerociousKind to $FerociousKind - 12)}
+    You keep still, ready for anything now. You concentrate hard on trying to pick out where the noise is coming from, but everything goes silent.
+    
+    Suddenly, you hear a rustle behind you! You jump, quickly spinning around to face the source. A figure emerges from the leaves and crawls out towards you. Realising it's the creature from before, you raise your sword. The little creature responds by showing its fangs and growling while beginning to circle around you.
+    
+    [[Keep your sword raised]]
+    [[Lower your sword]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}</tw-passagedata><tw-passagedata pid="53" name="Keep your sword raised" tags="" position="1168,3152">{(set: $FerociousKind to $FerociousKind - 8)(set: $SeriousPlayful to $SeriousPlayful - 14)}
+	You keep your sword raised, ready for fight off the creature. It begins to growl even louder, and only then you realise that this is a terrible idea; you don't want to actually kill it!
+    
+    [[Okay Fine]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}</tw-passagedata><tw-passagedata pid="54" name="Lower your sword" tags="" position="1332,3152">{$SeriousPlayful to $SeriousPlayful + 14)}
+	You lower your sword and with that your guard. *What am I doing?* You slowly lower your body, keeping eye contact with the creature, and place the sword on the ground, pushing it away. It scratches the ground as it glides a few metres across the grass for a second or two.
+    
+    The creature's eyes follow the sword until it comes to a halt, and almost immediately transforms his expression to something that seemed almost playful. The creature then begins to bounce towards you like a dog, and dives straight into your chest, knocking you to the floor.
+    
+    [[Continue|Newfound Friend]]
+
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}</tw-passagedata><tw-passagedata pid="55" name=" Play a song for him" tags="" position="1068,2704">{(set: $SeriousPLayful to $SeriousPlayful + 10)}
+    Despite $CreatureName's confusion about the flute's workings, you play a song on it for him. You think you sound pretty awful after all these years, but $CreatureName seems to love it, and jumps and dances around the room in a surprisingly good rhythm with the music.
+    
+    After a bit of playing, $CreatureName seems to be getting quite tired, and you begin to feel tired too. You set the flute down, and pick up $CreatureName, who immediately begins to fall asleep in your arms. You smile at this and head to your room.
+    
+    [[Continue|Getting ready for the first night]]
+    
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="56" name="Okay Fine" tags="" position="1166,3305">	You lower your sword and with that your guard. You then slowly lower your body, keeping eye contact with the creature, and place the sword on the ground, pushing it away. It scratches the ground as it glides a few metres across the grass for a second or two.
+    
+    The creature's eyes follow the sword until it comes to a halt, then they turn back to you. The creature relaxes and his face forms a neutral expression as he sits himself on the ground in front of you and stares.
+    
+    [[Give it some food|Give it some dried meat]]
+    [[Stare back]]</tw-passagedata><tw-passagedata pid="57" name="Newfound Friend" tags="" position="1404,3303">	You laugh it off, rubbing your backside in pain, being the first thing you landed on. The creature pushes itself into your other hand, prompting you the pet him, and you happily oblige. The creature begins purring joyfully, as you smile to a newfound friend.
+    
+    [[Can I name it?|Name Creature 2]]</tw-passagedata><tw-passagedata pid="58" name="Give it some dried meat" tags="" position="1247,3500">	You remember the dried meat you brought along with you, and you figure you might aswell give it to the little guy. You head over to your open bag and grab the chunk of meat, tearing it apart. You throw out each piece one by one, and watch the little creature scurry about, gobbling every piece in one go. *The little guy really is adorable...* You begin to feel like you can appreciate the monster somehow. This guy shows that they aren't all what people make them out to be. You begin to feel attached to the little guy. How about we give it a name?
+    
+    [[Lets name it!|Name Creature 2]]</tw-passagedata><tw-passagedata pid="59" name="Scold Creature" tags="" position="485,3831">{(set: $SeriousPlayful to $SeriousPlayful - 10)}
+{(set: $FerociousKind to $FerociousKind - 10)}
+ 	You feel a burst of irritation rise up inside you and you scold $CreatureName. "What do you think you are doing?! Get off of me $CreatureName!"
+    
+    $CreatureName jumps back off of you and crawls under the table in shame from you. You feel bad for getting mad so easily, but you think that he has to learn. Beside, you have other problems now.
+    
+    [[Continue|Where to put him]]
+    
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="60" name="Laugh and play along with Creature" tags="" position="650,3673">{(set: $SeriousPlayful to $SeriousPlayful + 10)} 
+    You laugh and roll over with $CreaureName on you. "You are a crazy fool!" you say somewhat endearingly, and ruffle his fur. You manage to stand up now, and $CreatureName scampers around the room joyously.
+
+ Your smile falls from your face and you sigh. You have a bigger problem now. Literally.
+    
+    [[Continue|Where to put him]]
+    
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="61" name="Where to put him" tags="" position="648,3830">	As you walk around the kitchen cleaning up the mess $CreatureName made, you try to think about what you should do. Monster apparently grow quite fast, or at least, when they do, they have a huge growth spurt. You can't hide him in your house. So you need to bring him somewhere safe. You have an idea, and you hope it will work. You look over at $CreatureName, who is scratching himself furiously. You sigh. "Monsters are supposed to be bad right? Why aren't you? You are making my life so complicated!"
+    
+    [[Continue|Moving out]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="62" name="Moving out" tags="" position="647,3980">	You breathe a sigh of relief once you are out into the woods, and away from the town. You set your large rucksack on the ground and $CreatureName comes rolling out. He seems pretty disorientated and you feel bad for him, but it was the only way you could get him outside of the town.
+    
+    "Alright $CreatureName, sorry about that, but it was the only way to get you out without anyone seeing you. But thank you for not causing any problems!" You pet him on the head as you say this, and he wags his tail.
+    
+ You look around and realise that you are right back where you found him the first time. You hadn't realised where you were walking to. You spend some time wandering around the forest gathering wood to build a small shelter.
+    
+    [[Continue|Making him stay]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="63" name="Name Creature 2" tags="" position="1405,3499">	You think it's about time to give the creature a name, and for the first time the thought of whether it's a boy or girl crosses your mind. It doesn't take long to figure out the little guy is, well, a guy.
+
+     "So you are a little fella huh? I guess you could go with a name instead of just 'the creature' right?" you say to him as you scratch behind his ear.
+    
+    [[Give it a name|Set Creature Name]]</tw-passagedata><tw-passagedata pid="64" name="Set Creature Name" tags="" position="1240,3686">(set: $CreatureName to (prompt:"What is his name?"))
+(if: $CreatureName is "")[(goto:"Insist Set Creature Name")]
+(else:)[(goto:"Creature Named 2")]</tw-passagedata><tw-passagedata pid="65" name="Insist Set Creature Name" tags="" position="1096,3685">(set: $CreatureName to (prompt:"You really should name this little guy!"))
+(if: $CreatureName is "")[(goto:"Insist Set Creature Name")]
+(else)[(goto:"Creature Named 2")]</tw-passagedata><tw-passagedata pid="66" name="Creature Named 2" tags="" position="957,3678">	"What do you think of the name $CreatureName?" you ask him. He seems to be quite happy with his new name, judging from the faces he makes. You feel like you're beginning to understand what kind of creature $CreatureName is like by now, creating an ever-growing bond between you and him.
+"Will you come home with me? I think you'll be safer there." You prompt $CreatureName by gesturing while taking your bag as you start towards an exit of the clearing.
+
+	[[Continue|Exit Forest]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="67" name="Wait" tags="" position="1406,2851">	Some time passes while you wait, with no creature or anything in sight. Getting tired, you begin to lose hope of ever seeing the little guy again when your frustrations are interrupted by the faint sound of little footsteps getting closer.
+    
+    [[Wait and watch]]
+    [[Surprise the creature when he appears|Surprise the creature]]</tw-passagedata><tw-passagedata pid="68" name="Wait and watch" tags="" position="1405,3001">{(set: $IgnorantIntelligent to $IgnorantIntelligent - 8)}
+	You decide not to act, but to keep waiting and see what happens. After a few moments the rushing footsteps come to a slow when you hear the rustle of a brush. You see the little creature from before waddle out into the open nonchalantly, with his eyes set on the dried meat in the open.
+    
+    [[Surprise the creature]]
+    [[Step out slowly]]
+    
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}</tw-passagedata><tw-passagedata pid="69" name="Surprise the creature" tags="" position="1702,2999">(set: $CowardlyFearless	to $CowardlyFearless + 15)
+    You decide to jump out in front of the creature, catch it with the element of surprise so it can't get away. You immediately launch yourself from the tree line into the middle of the clearing, screaming your distinct battle cry!
+    
+    Obviously you don't seem to be very threatening at all, as the creature just stands still, unfazed by your efforts. You slump with disappointment as the creature just stares at you blankly.
+    
+    [[Stare Back 2]]
+    [[Let the creature eat the food]]
+    
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}</tw-passagedata><tw-passagedata pid="70" name="Step out slowly" tags="" position="1475,3152">{(set: $FerociousKind to $FerociousKind + 12)}
+	You step out of cover slowly as to not startle the little creature. With your hands in the air you begin to speak "I'm not here to hurt you". The creature looks into your eyes, tilting its head. It then turns back to food, knowing that you must have left it there.
+
+    The creature quickly scurries to the food, throwing each chunk into its gaping mouth and swallowing everything whole. Wiping its mouth with its arm, begins running straight towards you. You try to steady yourself to no avail, as you're knocked cleanly on your backside.
+    
+    [[Ouch!|Newfound Friend]]
+    
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}</tw-passagedata><tw-passagedata pid="71" name="Stare back" tags="" position="1100,3499">{(set: $SeriousPlayful to $SeriousPlayful -4)(set: $IgnorantIntelligent to $IgnorantIntelligent + 8)}
+    You blankly stare back at the creature, as if playing a mind game. A war rages on between two powers, the monsters versus the humans as dictated by eons of history. You attempt several mental attacks, only to be outwitted around every corner.
+    
+    You both feel uncomfortable now.
+    
+    [[Break the ice|Give it some dried meat]]
+    
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}</tw-passagedata><tw-passagedata pid="72" name="Making him stay" tags="" position="647,4137">	"Alright $CreatureName, this if your new home for the moment. What do you think?" You say to him, gesturing at the grass covered wooden shelter you made. You watch $CreatureName as he wanders around the shelter sniffing at it and then steps inside, and lies down.
+    
+    "So, you like it then?" You ask him happily. He gives his standard noise of affirmation and you grin. "Great!" You walk over to him and hug him.
+    
+    "I want you to know $CreatureName, that I care about you, and i don't want anything bad to happen to you. That's why you need to stay out here. I'll come visit you every day if I can ok?" *What is wrong with me?* you wonder to yourself. *I'm getting upset at the thought of leaving a monster alone at night?* You feel like your whole worlds belief system has come crashing down since you met $CreatureName.
+    
+    [[Continue|What about food?]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="73" name="What about food?" tags="" position="647,4278">	The next problem you have is getting him food. You don't know if he can hunt yet, and you can't sneak the food he will need out every day. As you ponder your current predicament, a rabbit bursts out of a nearby bush. You remain very still and you notice $CreatureName do the same. He seems unsure what to do about the rabbit, almost like he is a little afraid of it. You wonder if you want him killing animals for his own food, but what other choice do you have?
+    
+    $CreatureName seems to look at you for guidance. You look back at the rabbit, and then back to him.
+    
+    [[Nod encouragingly and gesture at the rabbit]]
+    [[Shake your head]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="74" name="Nod encouragingly and gesture at the rabbit" tags="" position="647,4422">{(set: $CowardlyFearless to $CowardlyFearless + 10)}
+	You blink, and $CreatureName is moving faster than you have seen him move yet, and he descends upon the rabbit and kills it swiftly, and begins eating already. You release the breath that you hadn't realised you were holding.
+
+    That's one less problem you have to worry about. You decide you better head back before someone notices you are gone out of town on your own. $CreatureName howls sadly as you leave, but he doesn’t follow. You promise to come back every day.
+    
+    [[Continue| Next Week]]
+    
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="75" name="Shake your head" tags="" position="801,4421">{(set: $CowardlyFearless to $CowardlyFearless - 10)}
+     You watch as the rabbit runs away again, and you look back at $CreatureName. "Sorry buddy, but I just couldn't watch you kill something." You sigh as you now worry about his found problems again, but are surprised by him once again. You watch him get up and wander over to a bush and start sniffing around it. After a moment, you watch him reach in and start pulling out berries.
+	"You really are full of surprises," you say and watch him eat some berries. He pauses and then offers you a berry. You laugh and take it graciously. "Thanks $CreatureName. I have to go now, but I promise I will come back every day."
+    
+	You turn to leave and feel sad about leaving your new friend alone out here. You wave goodbye and hurry out of the clearing.
+        
+	[[Continue| Next Week]]
+        
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="76" name=" Next Week" tags="" position="647,4577">	An entire week has passed since you had to build a shelter for $CreatureName. Things have went surprisingly well, except for the growth spurts $CreatureName has been having. He is now just as tall as you, except he weighs double what you do.
+
+    You enter the clearing to see how he is doing for the day, and are tackled to the floor by his hulking form. He licks your face and you laugh. "Get off you big oaf!" He stands to the side and actually helps you stand up. Over the last week you have noticed how much he has grown, not just physically, because that is obvious. The way he acts is more adult-like now, though he is still prone to be hyperactive.
+
+    You talk with him for a little bit and flinch when he pets you. You smile to yourself as he does this. He has imitated a lot of what you did in the first few days of meeting him. He started petting you yesterday, much to your confusion.
+    
+     [[Continue| Next Week Part Two]]
+     
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="77" name=" Next Week Part Two" tags="" position="646,4716">	You sigh as you begin to think about your other problems that you now face. People in town have noticed your strange habits recently and have been asking questions. You are worried that people will eventually find out about him. Then, as if on cue from the universe itself, you hear a noise behind you. Your heart stops.
+
+    You spin around and so does $CreatureName. One of the members of the main hunting party is staring at you with his mouth open.
+    "What the hell is this?! That thing is a monster! What are you doing with it $PlayerName?"
+"Wait, please, he isn't what you think, just let me explain!" you plead desperately.
+"You don't need to, I'm going to tell everyone about this, that thing is going to die!" And with that, he runs off, and you feel the seams of your world beginning to unravel. You notice $CreatureName is very tense and looks like he is about to chase after him, but you tell him not to
+
+	 [[Continue| Next Week Part Three]]
+     
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="78" name=" Next Week Part Three" tags="" position="645,4863">	You feel bile rising in your throat. You needed more time. If you'd had it, you could have gotten people to see that they’re wrong about monsters, that they aren’t all the savages we believe them to be!
+
+    You realise you have one of two options. You feel that it could be one of the hardest choices you will ever make. You look at $CreatureName, and the bile in your throat is replaced with a lump.
+    
+    [[Run with $CreatureName|Run With Him]]
+    [[Try to convince the townspeople that all monsters are not bad]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="79" name="Try to convince the townspeople that all monsters are not bad" tags="" position="739,5008">"Ok, $CreatureName. I want you to know that I care about you. You are one of the best friends someone could ask for. Things aren't turning out how I would have liked them to. But we have one chance here ok? We have one chance to prove to them that not all monsters are bad. I believe in you $CreatureName. Now you need to make them believe in you!"
+    
+    A few of the slowest minutes in your life pass, and you hear the mob approaching. You inhale and clench your fists. It's all or nothing now.
+    
+    [[Continue|The Proving]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="80" name=" Run with Him Part Two" tags="" position="575,5155">	This concludes the sad, lonely tale of a single human and monster, who had the potential to change the world, but fear and the narrow mindedness of humans, forcing them to be closed off from the world, now, and forever. Their small tale closes, without ever having had time to deliver a message.</tw-passagedata><tw-passagedata pid="81" name="The Proving" tags="" position="739,5158">	The hunters enter the clearing with their bows drawn.
+"Wait! Please don't shoot! I know how terrible this looks but I can prove to you that $CreatureName is not bad like you think all monsters are! Just give me a chance!" You beg, trying your best to look at everyone in their eyes to get them to listen to you.
+"This is madness, that thing there is a monster and needs to be killed, $PlayerName! You clearly have be affected with some malady that has had you take leave of your senses!" The towns lead hunter has stepped up to the front of the rest, with his bow still drawn.
+ "If he was really so bad, wouldn't he have tried to attack by now?" you say, trying to reason with logic. You can see that the leader is taken aback.
+"Well, prove what you say is true then, show us that he is no a 'bad' monster!"
+ You face towards $CreatureName and take a deep breath. You can tell he is on edge, but so are you. You just hope you raised him right.
+    
+    [[Continue|Proving Intelligence]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="82" name="Proving Intelligence" tags="" position="738,5308">{(set: $ProvingCounter to 0)}
+	You think about how to show all the qualities in $CreatureName, that you know are there."Hey, $CreatureName. Go find some berries for me, like you did last time, remember?"
+    
+{(if: $CowardlyIntelligent &gt; 50)[[[Continue|Intelligence passed]]]
+(else:)[[[Continue|Intelligence failed]]]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="83" name="Run With Him" tags="" position="574,5004">	"Hey buddy, so things aren't going so well," you begin, but your voice betrays you and you feel tears beginning to roll down your face. $CreatureName touches one of your tears, and seems quite sad too. "You are an amazing friend $CreatureName, and I believe in you and trust you, but I don't know if they will, so that's why I need to get you far away from here, ok? Just you and me buddy." With that, you and your monster friend run off through the woods, leaving behind humanity forever. 
+    
+    [[Continue to epilogue| Run with Him Part Two]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="84" name="Intelligence passed" tags="" position="740,5461">{(set: $ProvingCounter to $ProvingCounter + 1)}
+    You watch apprehensively as $CreatureName wanders over to a berry bush and picks some. You feel your muscles relax as he walks back to you and gives you berries. You hear the crowd murmur in disbelief. That was good, but I need to show more. You think to yourself.
+    
+    [[Continue|Prove Kindness]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="85" name="Intelligence failed" tags="" position="889,5468">You watch as $CreatureName wanders over to a bush, but you feel yourself scream on the inside when he merely sniffs it and wanders back over to you.
+"Very impressive, I can tell you have trained the beast well!" The lead hunter jeers sarcastically. You feel like you might throw up. But you must keep trying. You know he is a good monster, you just need to show it!
+    
+    [[Continue|Prove Kindness]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="86" name="Prove Kindness" tags="" position="742,5629">	You will yourself to stay calm. You can try and show them how kind $CreatureName is, and you think you know a good way. You take a step forward and trip purposely. You hit the floor and let out a yell.
+
+{(if: $FerociousKind &gt; 70)[[[Continue|Kindness passed]]]
+(else:)[[[Continue|Kindness failed]]]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="87" name="Kindness passed" tags="" position="741,5779">{(set: $ProvingCounter to $ProvingCounter + 1)}
+    You have no sooner hit the ground, and $CreatureName is by your side helping you stand up again. You hug him, and he hugs you back. You look at all the people gathered around and see some people are staring in disbelief. You even see some of the bows lower. You think you have one more thing you can show them about him.
+    
+    [[Continue|Prove Playfullness]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="88" name="Kindness failed" tags="" position="892,5779">	You look at $CreatureName, and beg him to come to your aid, but he seems more preoccupied with the weapons pointing at him than to what is happening to you at the moment. You struggle to breath but force yourself to stand up.
+    
+    You look at the hunter’s leader and see him sneering with disgust at you. You feel your face go red and bite back tears. *I still have a chance!* you think to yourself.
+    
+    [[Continue|Prove Playfullness]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="89" name="Prove Playfullness" tags="" position="742,5929">	You look at $CreatureName and you force yourself to appear excited. "Hey, $CreatureName! Come on, catch me!" you shout cheerfully at him and make a dash across the clearing.
+    
+{(if: $SeriousPlayful &gt; 60)[[[Continue|Playful passed]]]
+(else:)[[[Continue|Playful failed]]]}
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="90" name="Playful passed" tags="" position="601,6079">{(set: $ProvingCounter to $ProvingCounter + 1)}
+    You look over your shoulder and grin when you see $CreatureName behind you. He jumps at you and tackles you to the ground and licks your face happily. You laugh and shove him him playfully to knock him off you. "That's enough buddy!"
+    You stand up and dust yourself off. You look at the people around you. They all stare in sheer amazement at $CreatureName's playful attitude.
+    
+(if: $ProvingCounter is 3)[[[Continue|Decision 3]]]
+(if: $ProvingCounter is 2)[[[Continue|Decision 2]]]
+(if: $ProvingCounter &lt; 2)[[[Continue|Decision 1]]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="91" name="Playful failed" tags="" position="884,6074">	You look over your shoulder in hopes that $CreatureName is following you but to your dismay, he looks at you and nothing else. You feel you stomach sink. *No*, you think to yourself, *this isn't good.*
+    
+(if: $ProvingCounter is 3)[[[Continue|Decision 3]]]
+(if: $ProvingCounter is 2)[[[Continue|Decision 2]]]
+(if: $ProvingCounter &lt; 2)[[[Continue|Decision 1]]]
+
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="92" name="Decision 2" tags="" position="719,6386">	You feel everyone watching warily, and they, in turn watch you and $CreatureName warily. You feel a palpable tension in the air. You can see the torn looks on almost everyone's face. Bows are drawn, but they are not pointing at you or $CreatureName just yet. The seconds pass by, as you wait for the verdict.
+    
+{(set: $Verdict to (either:"Decision 1","Decision 3"))
+(if: $Verdict is "Decision 1")[[[Continue|Decision 1]]]
+(else:)[[[Continue|Decision 3]]]}
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="93" name="Decision 1" tags="" position="576,6386">	The wind sends a cold chill down your spine and you shiver. You feel everyone's eyes on you, and you are painfully aware of the drawn bows. You feel your throat constrict when you see the leader raise his bow to fire at $CreatureName.
+    
+    "NO! Don't!" You scream and throw yourself in front of $CreatureName.
+    
+    [[Continue|The Life Lost]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="94" name="Decision 3" tags="" position="867,6386">	The townspeople seem to be speechless. None of them seem to understand what they have seen. Their entire belief of monsters has just been proven otherwise. Something they have grown up with all their lives no proves to not be true.
+    
+    But all the same, all the bows lower, and the strings are loosened. You can't beleive it. "I- I guess that maybe, there is a chance that all monsters aren't that bad... but... I just find it so hard to believe!" The leader says, dumbfounded. Everyone is pointing and talking excitedly amongst themselves now.
+    
+    You don't care however, because you jump at $CreatureName and hug him. "We did it buddy! We proved to them that you are good!" You feel like your heart is soaring now. Now you wonder about getting to meet other friendly monsters, and proving to the world that they are not all bad.
+    
+    [[Continue| Decision 3 epilogue]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="95" name=" Decision 3 epilogue" tags="" position="866,6534">	This concludes the tale of a human and their monster. They had a wonderful potential to prove the world wrong, and it was enabled to grow and flourish into what it could be. The ability to change the world, and allow monsters and humans to live in peace together.</tw-passagedata><tw-passagedata pid="96" name="Exit Forest" tags="" position="798,3508">	$CreatureName seems to understand your gestures, following you like a duckling would follow its mother. As you step out from the clearing, you see the last rays of sunlight through the tree line consumed by the night, nearing total darkness. You begin to hurry out from the forest, $CreatureName hurrying behind you. Luckily it doesn't take too long to make it out of the forest, saving you from being trapped through the night, and making it back home in one piece. $CreatureName and your entry into the village is masked by the cover of darkness, allowing you both to make it safely back to your house.
+    
+    You quickly unlock the door, letting $CreatureName in first and shutting the door behind you. You let out a huge sigh of relief and slump down to the floor, overtired from your adventures. Looking to your side, you see $CreatureName collapsed from exhaustion.
+    
+    [[Pick up $CreatureName and head up to your room|Getting ready for the first night]]
+    
+$CreatureName Traits:
+Ferocious(0%) - Kind(100%)			(Print: $FerociousKind)%
+Serious(0%) - Playful(100%)			(Print: $SeriousPlayful)%
+Ignorant(0%) - Intelligent(100%)		(Print: $IgnorantIntelligent)%
+Cowardly(0%) - Fearless(100%)		(Print: $CowardlyFearless)%</tw-passagedata><tw-passagedata pid="97" name="The Life Lost" tags="" position="576,6534">	Everything seems to slow down around you. You know how foolish this is, you don't know why you are going to throw away your life for a monster, but here you are, you're doing it. You can see the look of shock and disbelief of the faces of those who have already let loose their arrows. It's almost comical. You only hope, that $CreatureName gets away.
+    
+{(if: $CowardlyFearless &gt; 60)[[[Continue|Monster's Sacrifice]]]
+(else:)[[[Continue|Your sacrifice]]]}</tw-passagedata><tw-passagedata pid="98" name="Monster's Sacrifice" tags="" position="576,6684">	Before you can feel a single arrow pierce through your body, you feel large, clawed hands grab you, and throw you to the side. You hit the ground hard, and turn around in horror. $CreatureName threw you out of the way. He wouldn't let you sacrifice yourself for him. Tears stream down your face as you watch his arrow filled body hit the ground
+    "No no no no..." you sob uncontrollably. You are dimly aware of the shock on the faces of everyone around you. They would have never imagined seeing a monster sacrifice themselves to save a human. But you don't care. You realise now that $CreatureName was the best friend you could have ever had, and now he was gone.
+    
+    [[Continue| Monster's Sacrifice Epilogue]]</tw-passagedata><tw-passagedata pid="99" name="Your sacrifice" tags="" position="727,6684">	You feel the first arrow lodge in your shoulder, and the next in your leg, and the one after that, hits you in the chest. After that, you can't really feel them anymore. You turn slightly and face $CreatureName. You see tears rolling down his face and you know he cared. "Run," you croak as you fall to your knees. Your final glimpse of life is of your best friend running through the trees, out of sight, then everything goes dark and cold.
+    
+	[[Continue|Your Sacrifice's epilogue]]</tw-passagedata><tw-passagedata pid="100" name=" Monster's Sacrifice Epilogue" tags="" position="576,6834">	So the tragic tale of the friendship between a human and monster comes to a close. A noble sacrifice to save the life of another. The effect that they could have had on the world has been killed with the life of a monster. Though its ripples will cause others to question their beliefs, and open their eyes. So maybe one day, this tale will not be a tragic one.</tw-passagedata><tw-passagedata pid="101" name="Your Sacrifice's epilogue" tags="" position="725,6834">	This draws shut the curtains on the most tragic tale of all. The loss of a human life, and a monster's loss of their only friend. Their potential to change the world, completely crushed with no residual effects of their actions being left upon the world, leaving it forever seeped in eons of more hatred.</tw-passagedata><tw-passagedata pid="102" name="Let the creature eat the food" tags="" position="1754,3303">	The creature quickly scurries to the food, throwing each chunk into its gaping mouth and swallowing everything whole. Wiping its mouth with its arm, begins running straight towards you. You try to steady yourself to no avail, as you're knocked cleanly on your backside.
+    
+    [[Ouch!|Newfound Friend]]</tw-passagedata><tw-passagedata pid="103" name="Stare Back 2" tags="" position="1610,3180">{(set: $SeriousPlayful to $SeriousPlayful -4)(set: $IgnorantIntelligent to $IgnorantIntelligent + 8)}
+    You blankly stare back at the creature, as if playing a mind game. A war rages on between two powers, the monsters versus the humans as dictated by eons of history. You attempt several mental attacks, only to be outwitted around every corner.
+    
+    [[Okay just let it eat the food|Let the creature eat the food]]
+    
+{(if: $FerociousKind &gt; 100)[(set: $FerociousKind to 100)]
+(if: $FerociousKind &lt; 0)[(set: $FerociousKind to 0)]
+(if: $SeriousPlayful &gt; 100)[(set: $SeriousPlayful to 100)]
+(if: $SeriousPlayful &lt; 0)[(set: $SeriousPlayful to 0)]
+(if: $IgnorantIntelligent &gt; 100)[(set: $IgnorantIntelligent to 100)]
+(if: $IgnorantIntelligent &lt; 0)[(set: $IgnorantIntelligent to 0)]
+(if: $CowardlyFearless &gt; 100)[(set: $CowardlyFearless to 100)]
+(if: $CowardlyFearless &lt; 0)[(set: $CowardlyFearless to 0)]}</tw-passagedata></tw-storydata>
+
+
+</body></html>

@@ -1,0 +1,346 @@
+body
+{
+background-image: url("./Images/Background.jpg");
+background-size: cover;
+background-attachment: fixed;
+}
+html
+{
+overflow-y: scroll;
+}
+h
+{
+font: italic normal 64px georgia, sans-serif;
+letter-spacing: 1px;
+color: #B58C3B;
+}
+h1
+{
+text-align: center;
+}
+h2
+{
+text-align: center;
+font-size: 22px;
+}
+h3
+{
+font-size: 25px;
+}
+h4
+{
+font: italic normal 32px georgia, sans-serif;
+letter-spacing: 1px;
+color: #B58C3B;
+}
+p1
+{
+font: italic normal 24px georgia, sans-serif;
+color: #3F342E;
+}
+p#p01
+{
+margin-top: 190px;
+}
+p#p02
+{
+margin-top: 30px;
+}
+p#p03
+{
+text-align: center;
+}
+th, td
+{
+padding: 5px;
+text-align: left;
+border: 1px solid black;
+border-collapse: collapse;
+}
+table#t01
+{
+width: 100%;
+background-color: #f1f1c1;
+background: rgba(241,241,193,0.5);
+border: 1px solid black;
+border-collapse: collapse;
+}
+table#t02
+{
+border: 2px solid grey;
+width: 50%;
+background-color: #f1f1c1;
+}
+caption
+{
+font-size: 30px;
+font-style: bold;
+}
+form	
+{
+text-align: center;
+width: 450px;
+margin: 0 auto;
+}
+a:link, a:visited
+{
+display: block;
+width: 152px;
+height: 35px;
+color: #FFFFFF;
+background-color: #454545;
+text-align: center;
+padding-top: 10px;
+padding-left: 4px;
+padding-right:4px;
+text-decoration: none;
+font-family: Capriola, Helvetica, sans-serif;
+}
+a:hover, a:active
+{
+height: 50px;
+background-color: #5C5C5C;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+ul
+{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+li
+{
+float: left;
+}
+audio
+{
+width: 300px;
+display: block;
+}
+.leftedge
+{
+border-bottom-left-radius: 8px;
+border-top-left-radius: 8px;
+}
+.rightedge
+{
+border-bottom-right-radius: 8px;
+border-top-right-radius: 8px;
+}
+.navbar
+{
+height: 70px;
+}
+.backing
+{
+width: 800px;
+background-image: url("./Images/Wood_Maple.jpg");
+margin-left: auto;
+margin-right: auto;
+border-radius: 25px;
+overflow: hidden;
+}
+.banner
+{
+width: 524.4px;
+height: 204.8;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.events
+{
+width: 730px;
+height: 315px;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+text-align: center;
+}
+.button
+{
+margin-right: 10px;
+padding-top: 25px
+}
+.overlay
+{
+background:#ff9305;
+background:rgba(0,0,0,0.85);
+width: 720px;
+height: 60px;
+position: absolute;
+bottom: 0;
+padding-left: 10px;
+}
+.video
+{
+float: left;
+margin-right: 10px;
+}
+#tracks1
+{
+float: left;
+}
+#tracks2
+{
+float: right;
+}
+#Esection1
+{
+width: 730px;
+background: #FF9305;
+background: rgba(255,147,5,0.6); 
+border-radius: 15px;
+padding: 10px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+#Esection2
+{
+width: 730px;
+background: #5d5446;
+background: rgba(93,84,70,0.6); 
+border-radius: 15px;
+padding: 10px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+display: none;
+position: relative;
+}
+#Esection3
+{
+width: 730px;
+background: #0092bd;
+background: rgba(0,146,189,0.6); 
+border-radius: 15px;
+padding: 10px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+display: none;
+}
+#Esection4
+{
+width: 730px;
+background: #b02825;
+background: rgba(176,40,37,0.6); 
+border-radius: 15px;
+padding: 10px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+display: none;
+overflow: hidden;
+}
+#AUsection1
+{
+width: 730px;
+border-radius: 15px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+#AUsection2
+{
+width: 365px;
+background: CC0000;
+background:rgba(204,0,0,0.6);
+border-radius: 15px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+margin-top: 10px;
+margin-left: 10px;
+float: left;
+}
+#AUsection3
+{
+width: 365px;
+background: orange;
+background:rgba(255,147,5,0.6); 
+border-radius: 15px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-right: 10px;
+float: right;
+}
+#Hsection1
+{
+margin: 50px;
+border-radius: 25px;
+}
+#Hsection2
+{
+margin: 50px;
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: #5C5C5C;
+background: rgba(92,92,92,0.70); 
+border-radius: 25px;
+}
+#textblock1
+{
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+width: 80%;
+}
+#textblock2
+{
+margin-left: 20px;
+display: inline-block;
+width: 450px;
+}
+#featureimg
+{
+display: inline-block;
+float:left;
+}
+#HomeImg
+{
+height: 100px;
+width: 200px;
+}
+#GoldfishImg
+{
+width: 384px;
+height: 286px;
+float: left;
+margin-right: 10px;
+}
+#ACDCImg
+{
+width: 384px;
+height: 216px;
+float: right;
+margin-left: 10px;
+}
+#iTunesImg
+{
+width: 400px;
+height: 265px;
+float: right;
+margin-left: 10px;
+}
+#TicketsImg
+{
+width: 400px;
+height: 267px;
+float: right;
+margin-left: 10px;
+}
+#ConcertImg
+{
+width: 350px;
+height: 150px;
+}

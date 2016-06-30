@@ -1,0 +1,1 @@
+Full Assembly is opened in Solidworks through the "HydraDuo Assembly.SLDASM" file.

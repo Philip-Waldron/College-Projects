@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LoL Summoner App</string>
+    <string name="get_updates">Get updates!</string>
+    <string name="main_text">Summoner Application</string>
+    <string name="sum_name_hint">Summoner Name</string>
+    <string name="submit_btn">Submit</string>
+    <string name="logo">League of Legends</string>
+    <string name="update_info">This app has the option of notifying you of recent games upon establishing an internet connection. If you would like to opt in, please enter your username and region below and hit submit</string>
+    <string name="error_message">Aw Shoot!</string>
+    <string name="profile_icon">Profile Icon</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="current_game_btn">Current Game</string>
+    <string name="tier_desc">Tier</string>
+    <string name="team1">Blue Team</string>
+    <string name="team2">Red Team</string>
+    <string name="rank_title">Rank</string>
+    <string name="ban">Ban</string>
+    <string name="level_placeholder">30</string>
+    <string name="division_dier">Division and Tier</string>
+    <string name="lp_wins_loses">LP, Wins and Losses</string>
+    <string name="league_name">League Name</string>
+    <string name="champion">Champ</string>
+</resources>

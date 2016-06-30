@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lsa.lol.summonerapp.MainActivity"
+    android:background="@mipmap/srbackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_updates"
+        android:textColor="#FFFFFF"
+        android:paddingTop="10dp"
+        android:id="@+id/getUpdates"
+        android:layout_gravity="start|top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/logo"
+            android:layout_height="100dp"
+            android:src="@drawable/gamelogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_text"
+            android:textSize="20sp"
+            android:textColor="#1a1a1a"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:hint="@string/sum_name_hint"
+                android:textColor="#ffffff" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:backgroundTint="#4be8e8e8" />
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_btn"
+        android:id="@+id/button"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
