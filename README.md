@@ -1,2 +1,2 @@
 # Portfolio
-Programming, design and development portfolio for Philip Waldron
+Programming, development and design portfolio for Philip Waldron
