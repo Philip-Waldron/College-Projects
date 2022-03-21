@@ -1,2 +1,2 @@
 # College Projects
-Programming, development and design projects for Philip Waldron
+A non exhaustive collection of various interesting projects from my time in studying Computer Games Development in University of Limerick.
